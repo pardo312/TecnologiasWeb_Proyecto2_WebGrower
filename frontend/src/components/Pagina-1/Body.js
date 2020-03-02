@@ -16,7 +16,7 @@ export default class Body extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/departamentos")
+    fetch("/departamentos")
     .then(res => {
       return res.json();
     }).then(p => {
